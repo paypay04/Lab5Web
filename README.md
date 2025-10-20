@@ -5,11 +5,11 @@
 **Kelas:** TI.24.A2  
 **Mata Kuliah:** Pemrograman Web 1 
 
-Persiapan membuat dokumen HTML dengan nama file lab5_javascript.html seperti berikut. 
+**Persiapan membuat dokumen HTML dengan nama file lab5_javascript.html seperti berikut.**
 
 <img width="479" height="279" alt="Screenshot 2025-10-21 020005" src="https://github.com/user-attachments/assets/6ed0ad40-11f8-4f9e-8363-78d6e4892b64" />
 
-*Javascrip Dasar*
+**Javascrip Dasar**
 Pemakaian Alert sebagai property window. 
 
 <img width="557" height="177" alt="Screenshot 2025-10-21 015841" src="https://github.com/user-attachments/assets/57b2bbb2-e50c-4235-8eea-f7a1bd619e5d" />
@@ -30,7 +30,7 @@ Pembuatan fungsi dan cara pemanggilannya
 
 <img width="562" height="193" alt="Screenshot 2025-10-21 020227" src="https://github.com/user-attachments/assets/5620974e-6293-473d-88a7-1bb67b3dac9d" />
 
-*Dasar pemrograman Di Javascript*
+**Dasar pemrograman Di Javascript**
 
 Operasi dasar Aritmatika
 
@@ -67,7 +67,7 @@ hasil:
 
 <img width="148" height="64" alt="Screenshot 2025-10-21 020534" src="https://github.com/user-attachments/assets/f298a85d-c5e4-42fa-a6dd-64853a25aa6d" />
 
-*Pembuatan Form*
+**Pembuatan Form**
 
 Form Input
 
@@ -89,7 +89,7 @@ hasil apabila menggunakan latar belakang berwarna hijau, dan teks berwarna kunin
 
 <img width="599" height="182" alt="Screenshot 2025-10-21 020730" src="https://github.com/user-attachments/assets/4f54f4e7-27b0-470d-9042-ba2fd229d292" />
 
-*HTML DOM*
+**HTML DOM**
 
 Pilihan menggunakan checkkbox dengan perhitungan otomatis
 
@@ -99,7 +99,9 @@ hasil:
 
 <img width="567" height="170" alt="Screenshot 2025-10-21 020939" src="https://github.com/user-attachments/assets/5797bb6a-2467-4617-a5c4-25ed7567ad66" />
 
-#Pertanyaan dan Tugas 
+# Pertanyaan dan Tugas 
+
 *1. Buat script untuk melakukan validasi pada isian form.*
+
 
 
