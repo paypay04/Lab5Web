@@ -103,5 +103,11 @@ hasil:
 
 *1. Buat script untuk melakukan validasi pada isian form.*
 
+<img width="588" height="528" alt="Screenshot 2025-10-21 021551" src="https://github.com/user-attachments/assets/0f04cf96-0e1b-40ca-af8f-9f8dd3737b2f" />
+
+hasil:
+
+<img width="601" height="184" alt="Screenshot 2025-10-21 021600" src="https://github.com/user-attachments/assets/29fe9be2-9757-45dc-9b7e-b34d884d2906" />
+
 
 
