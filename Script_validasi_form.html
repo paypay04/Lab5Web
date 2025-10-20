@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Validasi Form Modern</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #f0c2ff, #c2e9fb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      width: 350px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus {
+      border-color: #8a2be2;
+    }
+
+    .error {
+      color: #e74c3c;
+      font-size: 0.9em;
+      margin-top: 3px;
+      display: none;
+    }
+
+    button {
+      width: 100%;
+      background: #8a2be2;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background: #6c1fbf;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Form Validasi</h2>
+    <form id="formData">
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama">
+      <div class="error" id="error-nama">Nama tidak boleh kosong!</div>
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email">
+      <div class="error" id="error-email">Email tidak valid!</div>
+
+      <label for="umur">Umur</label>
+      <input type="text" id="umur" name="umur">
+      <div class="error" id="error-umur">Umur harus berupa angka dan > 0!</div>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+ <script>
+  const form = document.getElementById("formData");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // stop submit dulu
+    
+    const nama = document.getElementById("nama").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const umur = document.getElementById("umur").value.trim();
+
+    const errNama = document.getElementById("error-nama");
+    const errEmail = document.getElementById("error-email");
+    const errUmur = document.getElementById("error-umur");
+
+    // reset error
+    errNama.style.display = "none";
+    errEmail.style.display = "none";
+    errUmur.style.display = "none";
+
+    let valid = true;
+
+    if (nama === "") {
+      errNama.style.display = "block";
+      valid = false;
+    }
+
+    // ✅ regex yang benar — cuma pakai satu backslash (\s)
+    const polaEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!polaEmail.test(email)) {
+      errEmail.style.display = "block";
+      valid = false;
+    }
+
+    if (isNaN(umur) || umur <= 0) {
+      errUmur.style.display = "block";
+      valid = false;
+    }
+
+    if (valid) {
+      alert("Data berhasil dikirim! 🎉");
+      form.reset();
+    }
+  });
+</script>
